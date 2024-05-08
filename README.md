@@ -20,7 +20,7 @@ After cloning this project, go to the [Squid Cloud Console](https://console.squi
 Change to the backend directory, and install the required dependencies:
 
 ```bash
-cd image-generation-backend
+cd backend
 npm install
 ```
 
@@ -35,21 +35,11 @@ squid init-env \
  --region YOUR_REGION
 ```
 
-### Finalizing setup
-
-Complete the environment setup with the following steps, ensuring you're in the `backend` directory:
-
-```bash
-npm run copy-squid-dotenv
-```
-
-This command prepares your `.env` file for the Vite environment by generating a `frontend/.env.local` file.
-
 ## Running the application
 
 ### Starting the local backend server
 
-To launch the local backend server of your Squid application, run the following command from the `image-generation-backend` directory:
+To launch the local backend server of your Squid application, run the following command from the `backend` directory:
 
 ```bash
 squid start
@@ -67,8 +57,14 @@ You'll see output similar to the following, indicating that your server is up an
 Open a second terminal window. You should now have two terminal windows open: one running the local backend server, and one in which you will run the frontend. Initialize the frontend server by running the following commands:
 
 ```bash
-cd image-generation-frontend
+cd frontend
 npm install
+npm run setup-env
+```
+
+To launch the frontend of your Squid application, run the following command from the `frontend` directory:
+
+```bash
 npm run dev
 ```
 
