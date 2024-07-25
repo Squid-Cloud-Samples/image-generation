@@ -8,20 +8,24 @@ For this project you will need:
 
 - NodeJS v18 or later.
 - [Vite](https://vitejs.dev/).
-- A Squid Cloud account and a Squid application. To sign up for Squid, go to [Squid Cloud Console](https://console.squid.cloud). Once signed up, you can create an application.
-- The Squid Cloud CLI (`npm i @squidcloud/cli`).
+- A Squid AI account and a Squid application. To sign up for Squid, go to [Squid Console](https://console.squid.cloud). Once signed up, you can create an application.
 
 ## Environment configuration
 
 ### Setting up your `.env` file
 
-After cloning this project, go to the [Squid Cloud Console](https://console.squid.cloud), create an application (if haven't done so already) and click the **Create .env file** button under **Backend project**. This provides you with the command to create the `.env` file required for the project.
+After cloning this project, go to the [Squid Console](https://console.squid.cloud), create an application (if haven't done so already) and click the **Create .env file** button under **Backend project**. This provides you with the command to create the `.env` file required for the project.
 
-Change to the backend directory, and install the required dependencies:
+Install the required dependencies:
+
+```bash
+npm install
+```
+
+Change to the backend directory:
 
 ```bash
 cd backend
-npm install
 ```
 
 Run the initialization command you copied from the console. The command has the following format:
@@ -84,4 +88,4 @@ Write a prompt in the text field and click **Generate image**. Once loading is c
 
 ## Next steps
 
-To learn more about the Squid AI image generator, [view the documentation](https://docs.squid.cloud/docs/ai/generate-image). You can also check out all the other cool features of [Squid AI](https://docs.squid.cloud/docs/ai) to find out how Squid AI can supercharge your Squid apps.
+To learn more about the Squid AI image generator, [view the documentation](https://docs.squidcloud.ai/docs/ai/generate-image). You can also check out all the other cool features of [Squid AI](https://docs.squidcloud.ai/docs/ai) to find out how Squid AI can supercharge your Squid apps.
